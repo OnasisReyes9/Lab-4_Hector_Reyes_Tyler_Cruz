@@ -11,8 +11,8 @@ import java.util.Date;
  *
  * @author Onasis Reyes
  */
-public class DelitoMenor extends Delito{
-   
+public class DelitoMenor extends Delito {
+
     private String nombrePolicia;
     private int idPolicia;
     private int numCelda;
@@ -51,14 +51,12 @@ public class DelitoMenor extends Delito{
         this.numCelda = numCelda;
     }
 
-    
-
     @Override
     public String toString() {
-        return "DelitoMenor{" + "nombrePolicia=" + nombrePolicia + ", idPolicia=" + idPolicia + ", numCelda=" + numCelda + '}';
+        return super.toString()+ "DelitoMenor"
+                + "\nNombrePolicia: " + nombrePolicia
+                + "\nIdPolicia: " + idPolicia
+                + "\nNumCelda: " + numCelda + '\n';
     }
-    
-    
-    
-    
+
 }

@@ -17,4 +17,9 @@ public class Terrorista {
     metodo
     */
 
+    public Terrorista(String paisAtacar, String ciudadAtacar) {
+        this.paisAtacar = paisAtacar;
+        this.ciudadAtacar = ciudadAtacar;
+    }
+
 }

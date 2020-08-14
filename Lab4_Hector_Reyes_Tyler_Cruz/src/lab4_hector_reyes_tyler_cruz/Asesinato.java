@@ -10,20 +10,17 @@ package lab4_hector_reyes_tyler_cruz;
  * @author Onasis Reyes
  */
 public class Asesinato extends DelitoGrave {
-    
+
     private String nombreArma;
-    private int numCuerpos ;
+    private int numCuerpos;
 
     public Asesinato() {
     }
 
-    
-
-    public Asesinato(String nombreArma, int numCuerpos, p , double puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito, String pais) {
+    public Asesinato(String nombreArma, int numCuerpos, double puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito, String pais) {
         super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito, pais);
         this.nombreArma = nombreArma;
         this.numCuerpos = numCuerpos;
-        this.<error> = <error>;
     }
 
     public String getNombreArma() {
@@ -44,10 +41,9 @@ public class Asesinato extends DelitoGrave {
 
     @Override
     public String toString() {
-        return super.toString() + "Asesinato{\n" 
-                + "nombreArma\n=" + nombreArma 
-                + ", numCuerpos\n=" + numCuerpos + '}';
+        return super.toString() + "Asesinato\n"
+                + "NombreArma: " + nombreArma
+                + "\nNumCuerpos: " + numCuerpos + '\n';
     }
-    
-    
+
 }

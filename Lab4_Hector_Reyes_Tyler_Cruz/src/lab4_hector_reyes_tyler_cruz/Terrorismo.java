@@ -17,11 +17,13 @@ public class Terrorismo extends DelitoGrave {
     public Terrorismo() {
     }
 
-    public Terrorismo(String nombreArtefacto, int numVictimas, int puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito) {
-        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito);
+    public Terrorismo(String nombreArtefacto, int numVictimas, double puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito, String pais) {
+        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito, pais);
         this.nombreArtefacto = nombreArtefacto;
         this.numVictimas = numVictimas;
     }
+
+    
 
     public String getNombreArtefacto() {
         return nombreArtefacto;
@@ -41,9 +43,9 @@ public class Terrorismo extends DelitoGrave {
 
     @Override
     public String toString() {
-        return super.toString() + "Terrorismo{\n" 
-                + "nombreArtefacto\n=" + nombreArtefacto 
-                + ", numVictimas\n=" + numVictimas + '}';
+        return super.toString() + "Terrorismo\n" 
+                + "nombreArtefacto: " + nombreArtefacto 
+                + "\nNumVictimas: " + numVictimas + '\n';
     }
     
     

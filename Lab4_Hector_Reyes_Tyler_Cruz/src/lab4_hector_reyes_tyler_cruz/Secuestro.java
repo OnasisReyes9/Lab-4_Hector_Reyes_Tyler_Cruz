@@ -17,11 +17,13 @@ public class Secuestro extends DelitoGrave{
     public Secuestro() {
     }
 
-    public Secuestro(String tiempo, boolean vivo, int puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito) {
-        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito);
+    public Secuestro(String tiempo, boolean vivo, double puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito, String pais) {
+        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito, pais);
         this.tiempo = tiempo;
         this.vivo = vivo;
     }
+
+   
 
     public String getTiempo() {
         return tiempo;
@@ -41,7 +43,9 @@ public class Secuestro extends DelitoGrave{
 
     @Override
     public String toString() {
-        return "Secuestro{" + "tiempo=" + tiempo + ", vivo=" + vivo + '}';
+        return super.toString() + "Secuestro" 
+                + "\nTiempo: " + tiempo 
+                + "\nVivo: " + vivo + '\n';
     }
     
     

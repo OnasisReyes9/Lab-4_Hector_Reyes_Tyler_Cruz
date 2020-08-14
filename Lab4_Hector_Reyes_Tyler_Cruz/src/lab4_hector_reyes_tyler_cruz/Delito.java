@@ -13,8 +13,9 @@ public class Delito {
 
     private String descripcion, nombreVictima;
     private boolean culpable;
-    private String sentencia, fecha,pais;
+    private String sentencia, fecha;
     private int numDelito;
+    private String pais;
 
     public Delito() {
     }
@@ -87,13 +88,14 @@ public class Delito {
 
     @Override
     public String toString() {
-        return "Delito{\n" 
-                + "descripcion\n=" + descripcion 
-                + ", nombreVictima\n=" + nombreVictima 
-                + ", culpable\n=" + culpable 
-                + ", sentencia\n=" + sentencia 
-                + ", fecha\n=" + fecha 
-                + ", numDelito=" + numDelito + ", pais=" + pais + '}';
+        return "Delito\n" 
+                + "Descripcion: " + descripcion 
+                + "\nNombreVictima: " + nombreVictima 
+                + "\nCulpable: " + culpable 
+                + "\nSentencia: " + sentencia 
+                + "\nFecha\n: " + fecha 
+                + "\nNumDelito: " + numDelito 
+                + "\nPais: " + pais + '\n';
     }
     
 

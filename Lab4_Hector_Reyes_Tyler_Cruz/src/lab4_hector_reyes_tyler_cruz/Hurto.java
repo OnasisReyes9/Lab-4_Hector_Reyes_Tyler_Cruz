@@ -17,8 +17,8 @@ public class Hurto extends DelitoMenor {
     public Hurto() {
     }
 
-    public Hurto(String objetoHurtado, double valor, String nombrePolicia, int idPolicia, int numCelda, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito) {
-        super(nombrePolicia, idPolicia, numCelda, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito);
+    public Hurto(String objetoHurtado, double valor, String nombrePolicia, int idPolicia, int numCelda, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito, String pais) {
+        super(nombrePolicia, idPolicia, numCelda, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito, pais);
         this.objetoHurtado = objetoHurtado;
         this.valor = valor;
     }
@@ -42,8 +42,9 @@ public class Hurto extends DelitoMenor {
     @Override
     public String toString() {
         return super.toString() +
-                "Hurto{\n" + "objetoHurtado\n=" + objetoHurtado + 
-                ", valor\n=" + valor + '}';
+                "Hurto\n"
+                + "objetoHurtado: " + objetoHurtado + 
+                "\nvalor: " + valor + '\n';
     }
     
 

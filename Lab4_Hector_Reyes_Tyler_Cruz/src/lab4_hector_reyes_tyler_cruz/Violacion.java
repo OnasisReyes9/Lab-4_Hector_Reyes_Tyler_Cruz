@@ -10,14 +10,14 @@ package lab4_hector_reyes_tyler_cruz;
  * @author Onasis Reyes
  */
 public class Violacion extends DelitoGrave {
-    
+
     private int edadVictima;
 
     public Violacion() {
     }
 
-    public Violacion(int edadVictima, int puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito) {
-        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito);
+    public Violacion(int edadVictima, double puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito, String pais) {
+        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito, pais);
         this.edadVictima = edadVictima;
     }
 
@@ -31,11 +31,8 @@ public class Violacion extends DelitoGrave {
 
     @Override
     public String toString() {
-        return "Violacion{\n" 
-                + "edadVictima\n=" + edadVictima + '}';
+        return super.toString() + "Violacion\n"
+                + "\nedadVictima: " + edadVictima + '\n';
     }
 
-    
-    
-    
 }

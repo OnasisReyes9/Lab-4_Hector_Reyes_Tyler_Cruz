@@ -10,7 +10,7 @@ package lab4_hector_reyes_tyler_cruz;
  * @author Onasis Reyes
  */
 public class Vandalismo extends DelitoMenor {
-    
+
     private String edificacion;
     private int pisos;
     private String nombreDueño;
@@ -18,8 +18,8 @@ public class Vandalismo extends DelitoMenor {
     public Vandalismo() {
     }
 
-    public Vandalismo(String edificacion, int pisos, String nombreDueño, String nombrePolicia, int idPolicia, int numCelda, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito) {
-        super(nombrePolicia, idPolicia, numCelda, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito);
+    public Vandalismo(String edificacion, int pisos, String nombreDueño, String nombrePolicia, int idPolicia, int numCelda, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito, String pais) {
+        super(nombrePolicia, idPolicia, numCelda, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito, pais);
         this.edificacion = edificacion;
         this.pisos = pisos;
         this.nombreDueño = nombreDueño;
@@ -51,14 +51,10 @@ public class Vandalismo extends DelitoMenor {
 
     @Override
     public String toString() {
-        return super.toString() + "Vandalismo{\n" + 
-                "edificacion\n=" + edificacion 
-                + ", pisos\n=" + pisos 
-                + ", nombreDue\u00f1o=" + nombreDueño + '}';
+        return super.toString() + "Vandalismo"
+                + "\nedificacion: " + edificacion
+                + "\npisos: " + pisos
+                + "\nnombreDueño: " + nombreDueño + '\n';
     }
 
-    
-    
-    
-    
 }

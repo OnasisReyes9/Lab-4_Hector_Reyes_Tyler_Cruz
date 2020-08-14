@@ -9,8 +9,8 @@ package lab4_hector_reyes_tyler_cruz;
  *
  * @author Onasis Reyes
  */
-public class DelitoGrave extends Delito{
- 
+public class DelitoGrave extends Delito {
+
     private double puntuacionGravedad;
 
     public DelitoGrave() {
@@ -26,17 +26,16 @@ public class DelitoGrave extends Delito{
     }
 
     public void setPuntuacionGravedad(double puntuacionGravedad) {
-        this.puntuacionGravedad = puntuacionGravedad;
+        if (puntuacionGravedad >= 1 && puntuacionGravedad <= 5) {
+            this.puntuacionGravedad = puntuacionGravedad;
+        }
     }
-
-    
 
     @Override
     public String toString() {
-        return  super.toString() + 
-                "DelitoGrave{\n" + 
-                "puntuacionGravedad\n=" + puntuacionGravedad + '}';
+        return super.toString()
+                + "DelitoGrave\n"
+                + "puntuacionGravedad: " + puntuacionGravedad + '\n';
     }
-    
-    
+
 }

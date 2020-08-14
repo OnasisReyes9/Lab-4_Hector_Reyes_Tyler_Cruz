@@ -91,7 +91,14 @@ public class Criminal {
 
     @Override
     public String toString() {
-        return "Criminal{" + "delitos=" + delitos + ", nombre=" + nombre + ", edad=" + edad + ", genero=" + genero + ", paisResidencia=" + paisResidencia + ", encarcelado=" + encarcelado + ", descripcionFisica=" + descripcionFisica + '}';
+        return "Criminal\n" +
+                "delitos: " + delitos 
+                + "\nNombre: " + nombre
+                + "\nEdad: " + edad + 
+                "\nGenero: " + genero + 
+                "\nPaisResidencia: " + paisResidencia 
+                + "\nEncarcelado: " + encarcelado 
+                + "\nDescripcionFisica: " + descripcionFisica + '\n';
     }
     
     

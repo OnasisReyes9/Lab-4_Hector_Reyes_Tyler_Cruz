@@ -9,15 +9,16 @@ package lab4_hector_reyes_tyler_cruz;
  *
  * @author Tyler C
  */
-public class TraficoDrogras extends DelitoGrave{
+public class TraficoDrogras extends DelitoGrave {
+
     private String drugName;
     private int cantDrug;
 
     public TraficoDrogras() {
     }
 
-    public TraficoDrogras(String drugName, int cantDrug, int puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito) {
-        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito);
+    public TraficoDrogras(String drugName, int cantDrug, double puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito, String pais) {
+        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito, pais);
         this.drugName = drugName;
         this.cantDrug = cantDrug;
     }
@@ -40,7 +41,9 @@ public class TraficoDrogras extends DelitoGrave{
 
     @Override
     public String toString() {
-        return "TraficoDrogras{" + "drugName=" + drugName + ", cantDrug=" + cantDrug + '}';
+        return super.toString() + "TraficoDrogras"
+                + "\ndrugName: " + drugName
+                + "\ncantDrug: " + cantDrug + '\n';
     }
-    
+
 }
