@@ -13,4 +13,5 @@ public class Asesino {
     
     private String nombreVictima, arma;
     
+    
 }

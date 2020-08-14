@@ -13,5 +13,36 @@ public class Secuestro extends DelitoGrave{
     
     private String tiempo;
     private boolean vivo;
+
+    public Secuestro() {
+    }
+
+    public Secuestro(String tiempo, boolean vivo, int puntuacionGravedad, String descripcion, String nombreVictima, boolean culpable, String sentencia, String fecha, int numDelito) {
+        super(puntuacionGravedad, descripcion, nombreVictima, culpable, sentencia, fecha, numDelito);
+        this.tiempo = tiempo;
+        this.vivo = vivo;
+    }
+
+    public String getTiempo() {
+        return tiempo;
+    }
+
+    public void setTiempo(String tiempo) {
+        this.tiempo = tiempo;
+    }
+
+    public boolean isVivo() {
+        return vivo;
+    }
+
+    public void setVivo(boolean vivo) {
+        this.vivo = vivo;
+    }
+
+    @Override
+    public String toString() {
+        return "Secuestro{" + "tiempo=" + tiempo + ", vivo=" + vivo + '}';
+    }
+    
     
 }
