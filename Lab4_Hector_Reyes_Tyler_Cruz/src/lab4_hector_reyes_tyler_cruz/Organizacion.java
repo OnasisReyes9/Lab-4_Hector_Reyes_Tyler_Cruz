@@ -27,13 +27,12 @@ public class Organizacion {
         Organizacion.criminales = criminales;
     }
 
-    @Override
-    public String toString() {
-        return "Organizacion{" + '}';
+    public static ArrayList<Agente> getAgentes() {
+        return agentes;
     }
-    
-    public void añadirCriminal(Criminal criminal){
-        criminales.add(criminal);
+
+    public static void setAgentes(ArrayList<Agente> agentes) {
+        Organizacion.agentes = agentes;
     }
     
 }

@@ -93,7 +93,7 @@ public class Delito {
                 + "\nNombreVictima: " + nombreVictima 
                 + "\nCulpable: " + culpable 
                 + "\nSentencia: " + sentencia 
-                + "\nFecha\n: " + fecha 
+                + "\nFecha: " + fecha 
                 + "\nNumDelito: " + numDelito 
                 + "\nPais: " + pais + '\n';
     }
