@@ -174,9 +174,9 @@ public class Lab4_Hector_Reyes_Tyler_Cruz {
                                 for (Object o : Organizacion.getAgentes()) {
                                     if (o instanceof Terrorista && i == pos) {
                                         terrorista = true;
-                                        ((Terrorista) Organizacion.getAgentes().get(pos)).CometerDelito(Organizacion.getAgentes().get(i).getPaisResidencia(),
-                                                 ((Terrorista) Organizacion.getAgentes().get(pos)).getCiudadAtacar(),
-                                                ((Terrorista) Organizacion.getAgentes().get(pos)));
+//                                        ((Terrorista) Organizacion.getAgentes().get(pos)).CometerDelito(Organizacion.getAgentes().get(i).getPaisResidencia(),
+//                                                 ((Terrorista) Organizacion.getAgentes().get(pos)).getCiudadAtacar(),
+//                                                ((Terrorista) Organizacion.getAgentes().get(pos)));
                                     }
                                     i++;
                                     
